@@ -39,20 +39,20 @@ gulp.task('enrich', function(){
 		}
 	}
 
-	gulp.src('src/education.handlebars')
+	gulp.src('src/education.handlebars', { base: "./" })
 		.pipe(handlebars(staticData, options))
 		.pipe(rename('education.html'))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('.'));
 
-	gulp.src('src/experience.handlebars')
+	gulp.src('src/experience.handlebars', { base: "./" })
 		.pipe(handlebars(staticData, options))
 		.pipe(rename('experience.html'))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('.'));
 
-	gulp.src('src/main.handlebars')
+	gulp.src('src/main.handlebars', { base: "./" })
 		.pipe(handlebars(staticData, options))
 		.pipe(rename('index.html'))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('.'));
 })
 
 gulp.task('default', function () {
