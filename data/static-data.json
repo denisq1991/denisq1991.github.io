@@ -27,7 +27,7 @@
     "projects": [
       {
         "name": "Qlimited Instrument Services",
-        "type": "Website<>",
+        "type": "Website",
         "description": "This is a website for a client allowing them to list products for sale and hire",
         "url": "https://qlimited.com"
       }
