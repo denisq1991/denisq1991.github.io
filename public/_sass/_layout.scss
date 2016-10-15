@@ -188,6 +188,11 @@ a {
         list-style-type: disc;
       }
 
+      .tech2 {
+        columns: 3;
+        list-style-type: disc;
+      }
+
       li {
         margin-bottom: 0;
         p {
@@ -261,7 +266,7 @@ a {
     padding-top: 2%;
 
     .year-title {
-      font-size: 2rem;
+      font-size: 3rem;
       text-transform: uppercase;
       border-bottom: 1px solid #71cd71;
       padding-bottom: 4px;

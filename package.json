@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Chris Gregori's portfolio built using my Modular HTML Kit",
+  "description": "Denis Quaid's portfolio built using my Modular HTML Kit",
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/gulp/bin/gulp.js",
@@ -15,7 +15,7 @@
     "modular",
     "javascript"
   ],
-  "author": "Chris Gregori",
+  "author": "Denis Quaid",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
