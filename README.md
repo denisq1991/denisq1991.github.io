@@ -1,18 +1,8 @@
-## modular-html-kit
+## My Personal Portfolio Website
 
-Starter kit for using handlebars, json and gulp to create HTML pages
+This is my portfolio website available at denisquaid.com
 
-### To install
-```
-$ git clone https://github.com/chrisgreg/modular-html-kit.git
+It is built using Node.js, HandleBars.js, Sass and Gulp.
 
-$ npm install
-```
+Credit to https://github.com/chrisgreg for providing his own project for me to edit for my own uses.
 
-### To generate HTML files
-
-```
-$ npm run build
-```
-
-Edit the static data and create as many files as you like
