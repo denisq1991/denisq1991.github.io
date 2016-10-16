@@ -1,10 +1,11 @@
 
-$green: #71cd71;
+
 
 .container {
   &.full-height {
-    height:100vh;
+    height:100%;
     width: 100%;
+    background: #023963;
   }
 }
 
@@ -13,12 +14,12 @@ $green: #71cd71;
 }
 
 a:hover {
-    color: #05a805;
+    color: #ffffff;
     text-decoration: underline;
 }
 
 a {
-    color: #05a805;
+    color: #3289CB;
     text-decoration: none;
 }
 
@@ -28,7 +29,8 @@ a {
   align-items: center;
   padding-top: 10px;
   height: 100%;
-  background: #f3f3f3;
+  background: #3289CB;
+
   position: fixed;
 
   .about {
@@ -58,7 +60,7 @@ a {
         font-size: 2.3rem;
         padding-top: 5px;
         letter-spacing: 1px;
-        color: #6d6d6d;
+        color: #3289CB;
         font-weight: 400;
       }
 
@@ -66,13 +68,13 @@ a {
         text-transform: uppercase;
         font-size: 1.6rem;
         letter-spacing: 1px;
-        color: gray;
+        color: #3289CB;
       }
 
       h3 {
         font-size:1.6rem;
         letter-spacing: 1px;
-        color: #00a700;
+        color: #ffffff;
       }
     }
   }
@@ -85,7 +87,7 @@ a {
       text-decoration: none;
       color: inherit;
       &:hover {
-        color: #00a700;
+        color: #ffffff;
       }
     }
 
@@ -99,7 +101,7 @@ a {
       border-top: 1px solid #d0d0d0;
       padding: 10px 0px 0px 15px;
       letter-spacing: 2px;
-      color: #676767;
+      color: #023963;
       font-size: 1.3rem;
 
       &:last-child {
@@ -138,16 +140,16 @@ a {
 
     h1 {
       text-transform: uppercase;
-      border-bottom: 1px solid #71cd71;
+      border-bottom: 1px solid #3289CB;
       margin-right: 16%;
     }
     h5 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     h4 {
       font-size: 2rem;
       text-transform: uppercase;
-      border-bottom: 1px solid #71cd71;
+      border-bottom: 1px solid #3289CB;
       padding-bottom: 4px;
     }
 
@@ -159,7 +161,7 @@ a {
         }
         h5 {
           font-size:1.6rem;
-          color: gray;
+          color: #3289CB;
         }
       }
 
@@ -170,7 +172,7 @@ a {
 
       .details {
         h4 span {
-          border-bottom: 1px solid #71cd71;
+          border-bottom: 1px solid #3289CB;
           padding-bottom: 3px;
         }
         :first-child {
@@ -237,7 +239,7 @@ a {
 
     .title {
       span {
-        border-bottom: 1px solid #71cd71;
+        border-bottom: 1px solid #3289CB;
         text-transform: uppercase;
         letter-spacing: 2px;
       }
@@ -248,7 +250,7 @@ a {
     .stats {
       display: flex;
       justify-content: space-around;
-      color: $green;
+      color: #fffff;
       margin-top: 20px;
     }
   }
@@ -269,7 +271,7 @@ a {
     .year-title {
       font-size: 3rem;
       text-transform: uppercase;
-      border-bottom: 1px solid #71cd71;
+      border-bottom: 1px solid #3289CB;
       padding-bottom: 4px;
     }
 
