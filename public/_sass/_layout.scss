@@ -33,34 +33,32 @@ a {
 
   position: fixed;
 
-  .about {
-    margin: 0 auto;
-    padding: 0 10% 0 10%;
-  }
+     .image {
+      img {
+        width:80%;
+        border-radius: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
   .blurb {
     display: flex;
     padding-top:50px;
 
-    .image {
-      img {
-        width:115px;
-        border-radius: 40%;
-      }
-    }
-
     .details {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       text-transform: uppercase;
-      padding-left:20px;
+      width: 50%;
+      margin: 0 auto; 
+      text-align: center;
+
 
       h1 {
         font-size: 2.3rem;
         padding-top: 5px;
         letter-spacing: 1px;
-        color: #3289CB;
+        color: #ffffff;
         font-weight: 400;
       }
 
@@ -68,7 +66,7 @@ a {
         text-transform: uppercase;
         font-size: 1.6rem;
         letter-spacing: 1px;
-        color: #3289CB;
+        color: #ffffff;
       }
 
       h3 {
@@ -79,9 +77,16 @@ a {
     }
   }
 
+  .about {
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 0 10% 0 10%;
+  }
+
   .links {
     width: 100%;
     padding-top:30px;
+    text-align: center;
 
     a {
       text-decoration: none;
@@ -93,19 +98,19 @@ a {
 
     ul {
       list-style: none;
+      border-top: 1px solid #023963;
+      border-bottom: 1px solid #023963;
     }
 
     li {
       margin-bottom: 1rem;
       text-transform: uppercase;
-      border-top: 1px solid #d0d0d0;
-      padding: 10px 0px 0px 15px;
+      padding: 20px 0px 10px 15px;
       letter-spacing: 2px;
       color: #023963;
       font-size: 1.3rem;
 
       &:last-child {
-        border-bottom: 1px solid #d0d0d0;
         padding-bottom:8px;
       }
     }
