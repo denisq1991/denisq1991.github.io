@@ -19,7 +19,7 @@ a:hover {
 }
 
 a {
-    color: #3289CB;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ a {
 
      .image {
       img {
-        width:80%;
+        width:35%;
         border-radius: 40%;
         display: block;
         margin-left: auto;
@@ -45,10 +45,9 @@ a {
 
   .blurb {
     display: flex;
-    padding-top:50px;
+    padding-top:10px;
 
     .details {
-      text-transform: uppercase;
       width: 50%;
       margin: 0 auto; 
       text-align: center;
@@ -63,7 +62,6 @@ a {
       }
 
       h2 {
-        text-transform: uppercase;
         font-size: 1.6rem;
         letter-spacing: 1px;
         color: #ffffff;
@@ -78,6 +76,7 @@ a {
   }
 
   .about {
+    font-size: 1.2rem;
     margin: 0 auto;
     color: #ffffff;
     padding: 0 10% 0 10%;
@@ -85,7 +84,7 @@ a {
 
   .links {
     width: 100%;
-    padding-top:30px;
+    padding-top:10px;
     text-align: center;
 
     a {
@@ -104,8 +103,7 @@ a {
 
     li {
       margin-bottom: 1rem;
-      text-transform: uppercase;
-      padding: 20px 0px 10px 15px;
+      padding: 10px 0px 10px 10px;
       letter-spacing: 2px;
       color: #023963;
       font-size: 1.3rem;
@@ -118,16 +116,17 @@ a {
 }
 
 .content {
-  margin-left:33%;
+  margin-left:37%;
 }
 
 .social-media {
   list-style: none;
-  padding-top: 40px;
+  padding-top: 25px;
 
   li {
     display: inline-block;
     padding-right: 10px;
+    padding-left: 10px;
     img {
       height: 25px;
       width: auto;
@@ -144,16 +143,16 @@ a {
     padding-top:6%;
 
     h1 {
-      text-transform: uppercase;
-      border-bottom: 1px solid #3289CB;
-      margin-right: 16%;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
     }
     h5 {
       font-size: 1.6rem;
     }
     h4 {
       font-size: 2rem;
-      text-transform: uppercase;
       border-bottom: 1px solid #3289CB;
       padding-bottom: 4px;
     }
@@ -212,10 +211,16 @@ a {
 }
 
 .subtitle {
-  text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 25px;
   margin-bottom: 35px;
+}
+
+.mission-statement {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  margin-bottom: 30px;
 }
 
 .apps {
@@ -240,12 +245,12 @@ a {
 
     margin-bottom: 40px;
     width: 100%;
-    min-height: 130px;
+    min-height: 40px;
+    text-align: center;
 
     .title {
       span {
         border-bottom: 1px solid #3289CB;
-        text-transform: uppercase;
         letter-spacing: 2px;
       }
       margin-bottom: 0;
@@ -275,7 +280,6 @@ a {
 
     .year-title {
       font-size: 3rem;
-      text-transform: uppercase;
       border-bottom: 1px solid #3289CB;
       padding-bottom: 4px;
     }
