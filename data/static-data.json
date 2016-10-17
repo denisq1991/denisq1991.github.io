@@ -31,8 +31,8 @@
       {
         "name": "Qlimited Instrument Services",
         "type": "Website",
-        "description": "This is a website for a client allowing them to list products for sale and hire",
-        "url": "https://qlimited.com"
+        "description": "This is a project based on creating a new website for the business of a family member, it is made using Node.js, Express and MongoDB and uses a completely custom CMS and backend built by myself. The site has not yet fully launched and therefore contains a lot of test data. It's basically my long-standing side project..",
+        "url": "http://qlimited.herokuapp.com/"
       }
     ],
     "work": [
