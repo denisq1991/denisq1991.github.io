@@ -159,13 +159,15 @@ a {
 
     &.work {
       .description {
+        text-align: left;
+
         h4 {
           border-bottom: none;
           margin-bottom:0;
         }
         h5 {
+          margin-left: 0;
           font-size:1.6rem;
-          color: #3289CB;
         }
       }
 
@@ -223,15 +225,16 @@ a {
   margin-bottom: 30px;
 }
 
+
 .apps {
   margin-top:20px;
   list-style: none;
-  columns: 3;
+  columns: 1;
   column-gap: 40px;
 
   li {
-    display: inline-block;
     width: 100%;
+    border-top: 1px solid #3289CB;
   }
 
   &.sites-and-apps-projects {
@@ -250,11 +253,34 @@ a {
 
     .title {
       span {
-        border-bottom: 1px solid #3289CB;
         letter-spacing: 2px;
       }
       margin-bottom: 0;
       border: none;
+    }
+
+    .site-description {
+      padding-top: 20px;
+      text-align: justify;
+    }
+
+    .description {
+      width: 40%;
+      margin-left: 10%;
+      padding: 6px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .language {
+      text-align: center;
+      margin-left: 10%;
+      width: 40%;
+    }
+
+    .url {
+      margin-left: 80%;
+      text-decoration: underline;
     }
 
     .stats {
