@@ -57,7 +57,7 @@
         var element = document.createElement('li');
         element.innerHTML = '<div class="project"><h3 class="title"><span>'
 															+ repos[i].name + 
-                              '</span></h4><div class="url"><a href="'+ repos[i].url + '">Repository Link</a></div><div class="description">'
+                              '</span></h4><div class="url"><a id ="git-link" href="'+ repos[i].url + '">Repository Link</a></div><div class="description">'
 															+ repos[i].description + '</div><div class="language">'+ repos[i].language + '</div></div></div>';
         githubProjects.appendChild(element);
       }
