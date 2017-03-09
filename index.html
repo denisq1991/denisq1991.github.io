@@ -83,7 +83,7 @@
           
           	<!-- Github -->
           	<div>
-              <h3 class="github-projects-title subtitle">Github Projects</h3>
+              <h3 class="github-projects-title subtitle"></h3>
               <ul class="github-projects apps">
               </ul>
             </div>
@@ -127,7 +127,7 @@
           
           		function renderMetaData(repos) {
           			var githubProjectsTitle = document.querySelector('.github-projects-title');
-          			githubProjectsTitle.innerHTML = githubProjectsTitle.innerHTML + ' - ' + repos.length + ' projects';
+          			githubProjectsTitle.innerHTML = 'Github Projects' + ' - ' + repos.length + ' projects';
           			return repos;
           		}
           

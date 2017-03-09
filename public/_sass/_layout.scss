@@ -317,6 +317,12 @@ a {
     margin-bottom: 30px;
 }
 
+.github-projects-title {
+          @media screen and (max-width: $iPhone6-plus) {
+            display: none;
+        }
+}
+
 .apps {
     margin-top: 20px;
     list-style: none;
@@ -329,6 +335,7 @@ a {
     }
 
     &.sites-and-apps-projects {
+
         columns: inherit;
 
         .project {
@@ -337,16 +344,13 @@ a {
     }
 
     .project {
+
         margin-bottom: 40px;
         width: 100%;
         min-height: 40px;
         text-align: center;
 
         .title {
-            @media screen and (max-width: $iPhone6-plus) {
-                width: 100%;
-                text-align: center;
-            }
 
             span {
                 letter-spacing: 2px;
