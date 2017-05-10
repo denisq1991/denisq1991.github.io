@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./dist/images/favicon.ico" type="image/x-icon">
   </head>
-
+  <!-- This is the left side of the webpage (footer on mobile)-->
   <body>
     <div class="container full-height">
       <div class="mobile-image">
@@ -44,14 +44,11 @@
             </div>
             <div class="links">
               <ul>
-                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience.html">Experience</a></li>
-                <li><a href="education.html">Education</a></li>
               </ul>
             </div>
-          </div>
-          <div class="about">
-            I'm an iOS developer based in London with three years experience developing applications using Swift, Objective-C, and Node.js. I am currently working at NET-A-PORTER on the iOS team and have deveoped apps for iPhone, iPad Apple TV.
           </div>
           <div>
             <ul class="social-media">
@@ -67,99 +64,39 @@
             <!-- Mission Statement -->
             <h3 class="mission-statement-title">About Me</h3>
             <div class="mission-statement">
-                  Having started my career within a graduate scheme, I was fortunate enough to experience a multitude of different elements of web development before deciding on a career in iOS development. I hope to continue to develop within a team environment and also by working on my own personal projects which allow me to discover and experiment with new technologies. As I gain more experience, I want to bring my enthusiasm and passion for technologies to all teams I work with and make a difference within my team by delivering a best in class application which helps the business to grow as a whole.
+                  I'm a London Based iOS and tvOS developer currently working with <b>the YOOX NET-A-PORTER Group</b> where I focus on building features for the Net-A-Porter iOS app as well as the <b>MR PORTER</b> tvOS app.<br><br>
+
+                  Having worked on the Net-A-Porter on a daily basis for the past two years, I am used to working on apps
+                  with a large user base and have been exposed to a number of industry standard tools including all major iOS frameworks, analytics services including Adobe and Fabric, Version control tools as well as releasing and monitoring through iTunes connect.<br><br>
+
+                  As well as the Net-A-Porter iOS app, I also worked within a small team to produce the worlds first shoppable tvOS app, the <b>Mr Porter Apple TV</b> allows user to browse through the full library of videos on Mr Porter's editorial and also allows user's to buy any of the items they see by connecting their phones.<br><br>
+
+                  Throughout my time as a developer, I have developed using Objective-C, but since the release of Swift 2, I have migrated my skills in order to make Swift my primary programming language. I'm also proficient in using Node.js as well as front-end languages such as HTML, CSS and vanilla Javascript which I have used for hacks, projects and websites.
+
             </div>
           
-          	<!-- Apps -->
-          	<div>
-              <h3 class="sites-and-apps-title subtitle">Sites & Apps</h3>
-              <ul class="sites-and-apps-projects apps">
-          				<div class="project">
-          					<h4 class="title"><span>Qlimited Instrument Services - Website</span> - <a href="http://qlimited.herokuapp.com/">Link</a></h4>
-          					<div class="site-description">This is a project based on creating a new website for the business of a family member, it is made using Node.js, Express and MongoDB and uses a completely custom CMS and backend built by myself. The site has not yet fully launched and therefore contains a lot of test data. It's basically my long-standing side project..</div>
-          				</div>
-              </ul>
+            <div class="further-info">
+            I am constantly looking to upskill and test new tools and languages, most of my projects can
+            be found on my Github Page available <a href="https://github.com/denisq1991">here</a>.
+
+            Some of the capabailities acquired through my three years of experience include:<br><br>
+            <ul>
+              <li>- Monitoring performance through anlytics services such as Omniture, Google Analytics and Fabric</li>
+              <li>- Deploying iOS and tvOS apps throught the App Store</li>
+              <li>- Developing applications using Node.js</li>
+              <li>- Deploying and monitoring websites using Heroku</li>
+            </ul>
+
+            <div class="homepage-button">
+              <a href="public/files/DenisQuaidCV.pdf">DOWNLOAD MY CV</a>
             </div>
-          
-          	<!-- Github -->
-          	<div>
-              <h3 class="github-projects-title subtitle"></h3>
-              <ul class="github-projects apps">
-              </ul>
+
+            <div class="homepage-button">
+              <a href="projects.html">SEE MY PROJECTS</a>
             </div>
-          
+
+            </div>
           </div>
-          
-          
-          <script>
-            var githubProjects = document.querySelector('.github-projects');
-            if (typeof(githubProjects) != 'undefined' && githubProjects != null){
-              populateGithubProjects();
-            }
-          
-            function populateGithubProjects() {
-              const root = 'https://api.github.com';
-          
-              fetch(root + '/users/denisq1991/repos')
-                .then(getRepos)
-                .then(renderRepos)
-          			.then(renderMetaData)
-          			.then(getLanguageStats);
-          
-              function getRepos(response) {
-                return response.json().then((json) => {
-                  var repos = formatRepos(json);
-                  return repos;
-                })
-              }
-          
-              function renderRepos(repos) {
-                for(var i = 0; i < repos.length; ++i) {
-                  var element = document.createElement('li');
-                  element.innerHTML = '<div class="project"><h3 class="title"><span>'
-          															+ repos[i].name + 
-                                        '</span></h4><div class="url"><a id ="git-link" href="'+ repos[i].url + '">Repository Link</a></div><div class="description">'
-          															+ repos[i].description + '</div><div class="language">'+ repos[i].language + '</div></div></div>';
-                  githubProjects.appendChild(element);
-                }
-          			return repos;
-              }
-          
-          		function renderMetaData(repos) {
-          			var githubProjectsTitle = document.querySelector('.github-projects-title');
-          			githubProjectsTitle.innerHTML = 'Github Projects' + ' - ' + repos.length + ' projects';
-          			return repos;
-          		}
-          
-          		function getLanguageStats(repos) {
-          			var languages = Object.keys(repos).map(a => repos[a].language)
-          			var languageOccurances = new Map([...new Set(languages)].map(
-                  x => [x, languages.filter(y => y === x).length]
-              	));
-          
-          			console.log(languageOccurances)
-          
-          			return repos;
-          		}
-          
-              function formatRepos(json) {
-                return json.map(repo => {
-                  return {
-                    id: repo.id,
-                    created_date: repo.created_at,
-                    url: repo.html_url,
-                    description: repo.description || 'No description available',
-                    name: repo.name,
-                    stars: repo.stargazers_count,
-                    watchers: repo.watchers,
-          					language: repo.language
-                  }
-                }).sort((a,b) => {
-                  return new Date(b.created_date) - new Date(a.created_date);
-                })
-              }
-            }
-          </script>
         </div>
       </div>
 
