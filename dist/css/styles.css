@@ -3974,21 +3974,24 @@ a {
 }
 
 .homepage-button {
-	width: 180px;
+	width: 100%;
 	margin-top: 40px;
-	margin-bottom: 100px;
-	margin-left: 78px;
+	margin-bottom: 20px;
 	border: 1px solid #3289CB;
 	border-radius: 5px;
 	text-align: center;
 	padding: 15px;
-	float: left;
+	float: right;
 }
 
 .homepage-button a {
 	color: #3289CB;
 }
 
+.homepage-buttons {
+    width: 400px;
+    margin: 0 auto;
+}
 .project-image-laptop img {
     width: 45%;
     float: left;
@@ -4025,8 +4028,14 @@ a {
 }
 
 .homepage-button {
-	width: 264px;
+	width: 72%;
 	margin-left: 0;
+    margin-bottom: 100px;
+    float: left;
+}
+
+.education-results {
+    margin-bottom: 70px;
 }
 
 /* Projects */
